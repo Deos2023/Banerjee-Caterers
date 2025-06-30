@@ -22,7 +22,7 @@ export default function ContactSec() {
 
   const sendWhatsAppMessage = () => {
     const { name, phone, eventType, guestCount, message } = formData;
-    const text = `Hello Banerjee Caterers,\n\nI'm interested in your catering services:\n\n*Name:* ${name}\n*Phone:* ${phone}\n*Event Type:* ${eventType}\n*Guest Count:* ${guestCount}\n*Message:* ${message}\n\nPlease contact me to discuss further.`;
+    const text = `Hello Banerjee Caterers,\n\nI am interested in your catering services:\n\n*Name:* ${name}\n*Phone:* ${phone}\n*Event Type:* ${eventType}\n*Guest Count:* ${guestCount}\n*Message:* ${message}\n\nPlease contact me to discuss further.`;
     const encodedText = encodeURIComponent(text);
     window.open(`https://wa.me/917278425042?text=${encodedText}`, '_blank');
   };
@@ -128,7 +128,7 @@ export default function ContactSec() {
                 SEND VIA WHATSAPP
               </button>
               <p className="text-gray-400 text-sm mt-4">
-                By clicking this button, you'll start a chat with us on WhatsApp
+                By clicking this button, you will start a chat with us on WhatsApp
               </p>
             </div>
           </div>

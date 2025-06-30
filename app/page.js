@@ -216,7 +216,7 @@ export default function Home() {
                 </div>
               </div>
               <p className="text-sm text-gray-300 italic">
-                "For our annual conference, Dinesh and team executed flawless service for 300+ guests. Their attention to dietary requirements was exceptional. We've booked them for next year already!"
+                "For our annual conference, Dinesh and team executed flawless service for 300+ guests. Their attention to dietary requirements was exceptional. Weve booked them for next year already!"
               </p>
             </div>
             
@@ -231,7 +231,7 @@ export default function Home() {
                 </div>
               </div>
               <p className="text-sm text-gray-300 italic">
-                "Arghadip's modern twist on traditional dishes was the talk of our party! The fusion menu perfectly blended innovation with comfort. Plus, their photography team captured beautiful memories."
+                "Arghadips modern twist on traditional dishes was the talk of our party! The fusion menu perfectly blended innovation with comfort. Plus, their photography team captured beautiful memories."
               </p>
             </div>
           </div>

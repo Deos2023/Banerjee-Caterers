@@ -51,7 +51,7 @@ export default function AboutPage() {
           <div className="text-center mb-16">
             <p className="text-yellow-400 tracking-widest text-sm mb-3">✦ OUR JOURNEY ✦</p>
             <h2 className="text-4xl font-serif mb-6" style={{ fontFamily: 'Playfair Display' }}>
-              From Humble Beginnings to Kolkata's Premier Caterers
+              From Humble Beginnings to Kolkatas Premier Caterers
             </h2>
             <div className="w-24 h-0.5 bg-yellow-400 mx-auto"></div>
           </div>
@@ -59,7 +59,7 @@ export default function AboutPage() {
           <div className="grid md:grid-cols-2 gap-16 items-center">
             <div>
               <p className="text-gray-300 mb-6 leading-relaxed">
-                Founded in 1987 by Gobinda Banerjee in Belgachhia, Banerjee Caterers began its story with humble cooking contracts and a passion for authentic hospitality. Over the decades, it has grown into one of Kolkata's premier catering services, blending tradition with innovation.
+                Founded in 1987 by Gobinda Banerjee in Belgachhia, Banerjee Caterers began its story with humble cooking contracts and a passion for authentic hospitality. Over the decades, it has grown into one of Kolkata&apos;s premier catering services, blending tradition with innovation.
               </p>
               <p className="text-gray-300 mb-6 leading-relaxed">
                 To meet growing demand, we expanded operations with new branches in Kasba and Sodepur, broadening our reach across the city and surrounding regions.
@@ -161,10 +161,10 @@ export default function AboutPage() {
 
           <div className="mt-16 text-center max-w-4xl mx-auto">
             <p className="text-gray-300 italic mb-6">
-              "Together, three generations of the Banerjee family continue to uphold a promise — To craft every event with care. To deliver hospitality with heart. To make every guest feel truly celebrated."
+              Together, three generations of the Banerjee family continue to uphold a promise — To craft every event with care. To deliver hospitality with heart. To make every guest feel truly celebrated.
             </p>
             <p className="text-yellow-400 text-xl font-serif">
-              Because at Banerjee Caterers, we don't just serve food. We craft experience. We deliver hospitality.
+              Because at Banerjee Caterers, we don&apos;t just serve food. We craft experience. We deliver hospitality.
             </p>
           </div>
         </div>
@@ -279,7 +279,7 @@ export default function AboutPage() {
                   <div>
                     <h4 className="font-medium mb-1">End-to-End Event Solutions</h4>
                     <p className="text-gray-300 text-sm">
-                      From catering and decor to photography and makeup - we're your one-stop event partners
+                      From catering and decor to photography and makeup - we&apos;re your one-stop event partners
                     </p>
                   </div>
                 </li>
@@ -305,7 +305,7 @@ export default function AboutPage() {
               <div className="text-5xl font-serif text-yellow-400 mb-4">35+</div>
               <h3 className="text-xl font-serif mb-2">Years of Experience</h3>
               <p className="text-gray-300 text-sm">
-                Since our founding in 1987, we've perfected the art of Bengali hospitality
+                Since our founding in 1987, we&apos;ve perfected the art of Bengali hospitality
               </p>
             </div>
             <div className="bg-[#0d2b24] p-8 rounded-lg border border-[#22483f] text-center">

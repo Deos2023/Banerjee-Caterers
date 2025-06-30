@@ -13,7 +13,7 @@ export default function FAQSection() {
   const faqs = [
     {
       question: "How do I book Banerjee Caterers for my event?",
-      answer: "You can reach out through our Contact Form, call us directly, or send us a WhatsApp message. We'll discuss your event details, share menu options, and confirm availability."
+      answer: "You can reach out through our Contact Form, call us directly, or send us a WhatsApp message. Well discuss your event details, share menu options, and confirm availability."
     },
     {
       question: "What types of events do you cater to?",
@@ -117,7 +117,7 @@ export default function FAQSection() {
         </div>
 
         <div className="text-center mt-16">
-          <p className="text-gray-300 mb-6">Still have questions? We'd love to hear from you!</p>
+          <p className="text-gray-300 mb-6">Still have questions? We love to hear from you!</p>
           <Link 
             href="/contact" 
             className="inline-block border border-yellow-400 text-yellow-400 px-8 py-3 text-sm font-medium hover:bg-yellow-400 hover:text-black transition rounded"

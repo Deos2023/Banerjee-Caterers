@@ -15,13 +15,13 @@ export default function Testimonials() {
       id: 2,
       name: "Priya Malhotra",
       role: "Corporate Event",
-      content: "For our annual conference, Dinesh and team executed flawless service for 300+ guests. Their attention to dietary requirements was exceptional. We've booked them for next year already!"
+      content: "For our annual conference, Dinesh and team executed flawless service for 300+ guests. Their attention to dietary requirements was exceptional. We have booked them for next year already!"
     },
     {
       id: 3,
       name: "Ananya Chatterjee",
       role: "Anniversary Party",
-      content: "Arghadip's modern twist on traditional dishes was the talk of our party! The fusion menu perfectly blended innovation with comfort. Plus, their photography team captured beautiful memories."
+      content: "Arghadips modern twist on traditional dishes was the talk of our party! The fusion menu perfectly blended innovation with comfort. Plus, their photography team captured beautiful memories."
     }
   ];
 
