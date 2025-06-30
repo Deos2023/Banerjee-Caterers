@@ -2,8 +2,10 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 
 export default function Navbar() {
+  const pathname = usePathname();
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [openSubmenu, setOpenSubmenu] = useState(null);
@@ -25,6 +27,9 @@ export default function Navbar() {
     setOpenSubmenu(null);
   };
 
+  // Check if a link is active
+  const isActive = (href) => pathname === href;
+
   return (
     <>
       {/* Navbar */}
@@ -39,47 +44,76 @@ export default function Navbar() {
         <div className="flex items-center gap-2 z-60">
           <Link href="/" onClick={closeAllMenus}>
             <Image
-  src="/logo.png"
-  alt="Banerjee Caterers Logo"
-  width={80}
-  height={80}
-  className="h-16 md:h-20 w-auto"
-/>
-
+              src="/logo.png"
+              alt="Banerjee Caterers Logo"
+              width={80}
+              height={80}
+              className="h-16 md:h-20 w-auto"
+            />
           </Link>
         </div>
 
         {/* Desktop Nav Links */}
         <ul className="hidden md:flex gap-6 items-center text-sm">
           <li>
-            <Link href="/" className="hover:text-yellow-400 transition">
+            <Link 
+              href="/" 
+              className={`hover:text-yellow-400 transition relative ${isActive('/') ? 'text-yellow-400' : ''}`}
+            >
               HOME
+              {isActive('/') && (
+                <span className="absolute bottom-0 left-0 w-full h-0.5 bg-yellow-400"></span>
+              )}
             </Link>
           </li>
           <li>
-            <Link href="/menu" className="hover:text-yellow-400 transition">
+            <Link 
+              href="/menu" 
+              className={`hover:text-yellow-400 transition relative ${isActive('/menu') ? 'text-yellow-400' : ''}`}
+            >
               MENUS
+              {isActive('/menu') && (
+                <span className="absolute bottom-0 left-0 w-full h-0.5 bg-yellow-400"></span>
+              )}
             </Link>
           </li>
           <li>
-            <Link href="/gallery" className="hover:text-yellow-400 transition">
+            <Link 
+              href="/gallery" 
+              className={`hover:text-yellow-400 transition relative ${isActive('/gallery') ? 'text-yellow-400' : ''}`}
+            >
               GALLERY
+              {isActive('/gallery') && (
+                <span className="absolute bottom-0 left-0 w-full h-0.5 bg-yellow-400"></span>
+              )}
             </Link>
           </li>
           <li>
-            <Link href="/about" className="hover:text-yellow-400 transition">
+            <Link 
+              href="/about" 
+              className={`hover:text-yellow-400 transition relative ${isActive('/about') ? 'text-yellow-400' : ''}`}
+            >
               ABOUT US
+              {isActive('/about') && (
+                <span className="absolute bottom-0 left-0 w-full h-0.5 bg-yellow-400"></span>
+              )}
             </Link>
           </li>
           <li>
-            <Link href="/services" className="hover:text-yellow-400 transition">
+            <Link 
+              href="/services" 
+              className={`hover:text-yellow-400 transition relative ${isActive('/services') ? 'text-yellow-400' : ''}`}
+            >
               SERVICES
+              {isActive('/services') && (
+                <span className="absolute bottom-0 left-0 w-full h-0.5 bg-yellow-400"></span>
+              )}
             </Link>
           </li>
           <li className="relative group">
             <button
               onClick={() => toggleSubmenu("pages")}
-              className="flex items-center hover:text-yellow-400 transition"
+              className={`flex items-center hover:text-yellow-400 transition relative ${pathname.startsWith('/pages') ? 'text-yellow-400' : ''}`}
             >
               PAGES
               <svg
@@ -97,6 +131,9 @@ export default function Navbar() {
                   d="M19 9l-7 7-7-7"
                 />
               </svg>
+              {pathname.startsWith('/pages') && (
+                <span className="absolute bottom-0 left-0 w-full h-0.5 bg-yellow-400"></span>
+              )}
             </button>
             <div
               className={`absolute top-full left-0 w-48 bg-white text-[#0d2b24] rounded-md shadow-lg py-2 transition-all duration-300 ${
@@ -104,25 +141,30 @@ export default function Navbar() {
               }`}
             >
               <Link
-                href="/review"
-                className="block px-4 py-2 hover:bg-gray-100"
+                href="/reviews"
+                className={`block px-4 py-2 hover:bg-gray-100 ${isActive('/reviews') ? 'font-medium bg-gray-50' : ''}`}
                 onClick={closeAllMenus}
               >
                 Reviews
               </Link>
               <Link
                 href="/faq"
-                className="block px-4 py-2 hover:bg-gray-100"
+                className={`block px-4 py-2 hover:bg-gray-100 ${isActive('/faq') ? 'font-medium bg-gray-50' : ''}`}
                 onClick={closeAllMenus}
               >
                 FAQ
               </Link>
-             
             </div>
           </li>
           <li>
-            <Link href="/contact" className="hover:text-yellow-400 transition">
+            <Link 
+              href="/contact" 
+              className={`hover:text-yellow-400 transition relative ${isActive('/contact') ? 'text-yellow-400' : ''}`}
+            >
               CONTACT
+              {isActive('/contact') && (
+                <span className="absolute bottom-0 left-0 w-full h-0.5 bg-yellow-400"></span>
+              )}
             </Link>
           </li>
         </ul>
@@ -131,7 +173,7 @@ export default function Navbar() {
         <div className="hidden md:block">
           <Link
             href="/contact"
-            className="bg-yellow-500 text-black px-4 py-2 rounded hover:bg-yellow-600 transition-all font-medium"
+            className={`bg-yellow-500 text-black px-4 py-2 rounded hover:bg-yellow-600 transition-all font-medium ${isActive('/contact') ? 'ring-2 ring-yellow-400' : ''}`}
           >
             BOOK NOW
           </Link>
@@ -218,7 +260,7 @@ export default function Navbar() {
                 <li>
                   <Link
                     href="/"
-                    className="block py-2 text-lg hover:text-yellow-400"
+                    className={`block py-2 text-lg hover:text-yellow-400 ${isActive('/') ? 'text-yellow-400' : ''}`}
                     onClick={closeAllMenus}
                   >
                     HOME
@@ -227,7 +269,7 @@ export default function Navbar() {
                 <li>
                   <Link
                     href="/menu"
-                    className="block py-2 text-lg hover:text-yellow-400"
+                    className={`block py-2 text-lg hover:text-yellow-400 ${isActive('/menu') ? 'text-yellow-400' : ''}`}
                     onClick={closeAllMenus}
                   >
                     MENUS
@@ -236,7 +278,7 @@ export default function Navbar() {
                 <li>
                   <Link
                     href="/gallery"
-                    className="block py-2 text-lg hover:text-yellow-400"
+                    className={`block py-2 text-lg hover:text-yellow-400 ${isActive('/gallery') ? 'text-yellow-400' : ''}`}
                     onClick={closeAllMenus}
                   >
                     GALLERY
@@ -245,16 +287,25 @@ export default function Navbar() {
                 <li>
                   <Link
                     href="/about"
-                    className="block py-2 text-lg hover:text-yellow-400"
+                    className={`block py-2 text-lg hover:text-yellow-400 ${isActive('/about') ? 'text-yellow-400' : ''}`}
                     onClick={closeAllMenus}
                   >
                     ABOUT US
                   </Link>
                 </li>
                 <li>
+                  <Link
+                    href="/services"
+                    className={`block py-2 text-lg hover:text-yellow-400 ${isActive('/services') ? 'text-yellow-400' : ''}`}
+                    onClick={closeAllMenus}
+                  >
+                    SERVICES
+                  </Link>
+                </li>
+                <li>
                   <button
                     onClick={() => toggleSubmenu("mobile-pages")}
-                    className="flex items-center py-2 text-lg hover:text-yellow-400 w-full justify-between"
+                    className={`flex items-center py-2 text-lg hover:text-yellow-400 w-full justify-between ${pathname.startsWith('/pages') ? 'text-yellow-400' : ''}`}
                   >
                     PAGES
                     <svg
@@ -282,31 +333,24 @@ export default function Navbar() {
                   >
                     <Link
                       href="/reviews"
-                      className="block py-2 hover:text-yellow-400"
+                      className={`block py-2 hover:text-yellow-400 ${isActive('/reviews') ? 'text-yellow-400' : ''}`}
                       onClick={closeAllMenus}
                     >
                       Reviews
                     </Link>
                     <Link
                       href="/faq"
-                      className="block py-2 hover:text-yellow-400"
+                      className={`block py-2 hover:text-yellow-400 ${isActive('/faq') ? 'text-yellow-400' : ''}`}
                       onClick={closeAllMenus}
                     >
                       FAQ
-                    </Link>
-                    <Link
-                      href="/testimonials"
-                      className="block py-2 hover:text-yellow-400"
-                      onClick={closeAllMenus}
-                    >
-                      Testimonials
                     </Link>
                   </div>
                 </li>
                 <li>
                   <Link
                     href="/contact"
-                    className="block py-2 text-lg hover:text-yellow-400"
+                    className={`block py-2 text-lg hover:text-yellow-400 ${isActive('/contact') ? 'text-yellow-400' : ''}`}
                     onClick={closeAllMenus}
                   >
                     CONTACT
@@ -319,7 +363,7 @@ export default function Navbar() {
             <div className="mt-auto pt-6">
               <Link
                 href="/contact"
-                className="block w-full text-center bg-yellow-500 text-black px-4 py-3 rounded hover:bg-yellow-600 transition font-medium"
+                className={`block w-full text-center bg-yellow-500 text-black px-4 py-3 rounded hover:bg-yellow-600 transition font-medium ${isActive('/contact') ? 'ring-2 ring-yellow-400' : ''}`}
                 onClick={closeAllMenus}
               >
                 BOOK NOW
