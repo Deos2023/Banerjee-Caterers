@@ -86,7 +86,7 @@ export default function ContactPage() {
             <h1 className="text-4xl md:text-6xl font-serif mb-4" >
               Contact Us
             </h1>
-            <p className="text-xl md:text-2xl italic" style={{ fontFamily: 'Dancing Script' }}>
+            <p className="text-xl md:text-2xl italic" >
               Get in touch for your next memorable event
             </p>
           </div>

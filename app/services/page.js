@@ -239,7 +239,7 @@ export default function ServicesPage() {
             Ready to Plan Your Event?
           </h2>
           <p className="text-xl mb-8">
-            Let's discuss how we can make your occasion truly special with our catering services.
+            Lets discuss how we can make your occasion truly special with our catering services.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <Link 

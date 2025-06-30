@@ -32,7 +32,7 @@ export default function AboutPage() {
       <h1 className="text-4xl md:text-6xl font-serif mb-4" >
         Our Story
       </h1>
-      <p className="text-xl md:text-2xl italic" style={{ fontFamily: 'Dancing Script' }}>
+      <p className="text-xl md:text-2xl italic" >
         Crafting Experiences, Delivering Hospitality Since 1987
       </p>
     </div>

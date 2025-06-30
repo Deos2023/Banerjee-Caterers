@@ -56,7 +56,7 @@ export default function GalleryPage() {
             <h1 className="text-4xl md:text-6xl font-serif mb-4" >
               Our Gallery
             </h1>
-            <p className="text-xl md:text-2xl italic" style={{ fontFamily: 'Dancing Script' }}>
+            <p className="text-xl md:text-2xl italic" >
               Visual Feast of Our Creations
             </p>
           </div>
