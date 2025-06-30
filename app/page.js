@@ -35,7 +35,10 @@ export default function Home() {
             BANERJEE
           </h1>
           <h2 className="text-4xl md:text-6xl font-serif" >
-            CATERERS
+            CATERERS 
+          </h2>
+           <h2 className="text-xl md:text-3xl pt-4 font-serif" >
+            & EVENT MANAGEMENT 
           </h2>
           <p
             className="text-3xl md:text-5xl italic mt-2"

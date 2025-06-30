@@ -237,9 +237,7 @@ export default function Navbar() {
 
         {/* Mobile Sidebar - Fixed with solid background */}
         <div
-          className={`fixed top-0 right-0 h-full w-64 bg-[#0d2b24] shadow-xl z-[60] transform transition-transform duration-300 ease-in-out ${
-            mobileMenuOpen ? "translate-x-0" : "translate-x-full"
-          } md:hidden`}
+          className={`fixed top-0 right-0 h-full w-64 bg-[#0d2b24] shadow-xl z-[60] transform transition-transform duration-300 ease-in-out  md:hidden`}
           style={{
             backgroundColor: '#0d2b24',
             boxShadow: '-5px 0 15px rgba(0,0,0,0.3)'
@@ -388,7 +386,7 @@ export default function Navbar() {
       </nav>
 
       {/* Floating Buttons */}
-      <div className="fixed bottom-6 right-6 z-50 flex flex-col gap-4">
+      {/* <div className="fixed bottom-6 right-6 z-50 flex flex-col gap-4">
         {scrolled && (
           <button
             onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
@@ -450,10 +448,10 @@ export default function Navbar() {
             />
           </svg>
         </a>
-      </div>
+      </div> */}
 
       {/* Left Side Social Buttons */}
-      <div className="fixed bottom-6 left-6 z-50 hidden md:flex flex-col gap-4">
+      {/* <div className="fixed bottom-6 left-6 z-50 hidden md:flex flex-col gap-4">
         <a 
           href="https://www.facebook.com/banerjeecaterers?mibextid=ZbWKwL" 
           target="_blank" 
@@ -511,7 +509,7 @@ export default function Navbar() {
             />
           </svg>
         </a>
-      </div>
+      </div> */}
     </>
   );
 }
