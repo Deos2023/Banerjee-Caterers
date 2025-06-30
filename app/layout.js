@@ -2,6 +2,8 @@ import { Geist, Geist_Mono } from "next/font/google";
 import { Libre_Caslon_Display } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+import FloatingButtons from "./components/FloatingButtons";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -28,13 +30,19 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <Navbar />
+      
       <body
       style={{ fontFamily: 'Playfair Display' }}
         className={`${geistSans.variable} ${geistMono.variable} ${libreCaslon.variable} font-[var(--font-libre-caslon)] antialiased`}
       >
+        <Navbar />
         {children}
+         {/* <ScrollToTopButton /> */}
+         <FloatingButtons />
+        <Footer />
       </body>
+     
+
     </html>
   );
 }

@@ -254,22 +254,22 @@ export default function Home() {
           {/* Icon Grid Blocks */}
           <div className="grid md:grid-cols-4 sm:grid-cols-2 gap-8 mb-16">
             <div className="bg-[#10332a] p-8 rounded-lg border border-[#22483f] text-center">
-              <Image src="/icons/wedding-icon.png" width={56} height={56} className="w-14 h-14 mx-auto mb-4" alt="Wedding" />
+              <Image src="/img/setup/1 (38).jpeg" width={56} height={56} className="w-14 h-14 mx-auto mb-4" alt="Wedding" />
               <h3 className="text-lg font-serif mb-2">Wedding Catering</h3>
               <p className="text-sm text-gray-300">Intimate ceremonies to grand receptions.</p>
             </div>
             <div className="bg-[#10332a] p-8 rounded-lg border border-[#22483f] text-center">
-              <Image src="/icons/corporate-icon.png" width={56} height={56} className="w-14 h-14 mx-auto mb-4" alt="Corporate" />
+              <Image src="/img/setup/1 (47).jpeg" width={56} height={56} className="w-14 h-14 mx-auto mb-4" alt="Corporate" />
               <h3 className="text-lg font-serif mb-2">Corporate Events</h3>
               <p className="text-sm text-gray-300">Seminars, training, conferences, and high-tea setups.</p>
             </div>
             <div className="bg-[#10332a] p-8 rounded-lg border border-[#22483f] text-center">
-              <Image src="/icons/social-icon.png" width={56} height={56} className="w-14 h-14 mx-auto mb-4" alt="Social" />
+              <Image src="/img/setup/1 (43).jpeg" width={56} height={56} className="w-14 h-14 mx-auto mb-4" alt="Social" />
               <h3 className="text-lg font-serif mb-2">Social Gatherings</h3>
               <p className="text-sm text-gray-300">Birthdays, anniversaries, and reunions.</p>
             </div>
             <div className="bg-[#10332a] p-8 rounded-lg border border-[#22483f] text-center">
-              <Image src="/icons/religious-icon.png" width={56} height={56} className="w-14 h-14 mx-auto mb-4" alt="Religious" />
+              <Image src="/img/setup/1 (39).jpeg" width={56} height={56} className="w-14 h-14 mx-auto mb-4" alt="Religious" />
               <h3 className="text-lg font-serif mb-2">Religious Functions</h3>
               <p className="text-sm text-gray-300">Annaprashan, pujas, havans with sattvik food options.</p>
             </div>
@@ -292,7 +292,7 @@ export default function Home() {
       
       {/* Map Section */}
       <section className="w-full h-[500px] bg-gray-200">
-        <iframe
+        {/* <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3685.7717763250143!2d88.39450819999999!3d22.5127444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a0271e4a7d236f5%3A0x1d4a89f219d047f3!2sBanerjee%20Caterers%20and%20Event%20Management-Kasba%20Branch!5e0!3m2!1sen!2sin!4v1751272263287!5m2!1sen!2sin"
           width="100%"
           height="100%"
@@ -300,7 +300,7 @@ export default function Home() {
           allowFullScreen=""
           loading="lazy"
           title="Banerjee Caterers Location"
-        ></iframe>
+        ></iframe> */}
       </section>
     </>
   );

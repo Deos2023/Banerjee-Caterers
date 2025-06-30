@@ -71,6 +71,11 @@ export default function Navbar() {
               ABOUT US
             </Link>
           </li>
+          <li>
+            <Link href="/services" className="hover:text-yellow-400 transition">
+              SERVICES
+            </Link>
+          </li>
           <li className="relative group">
             <button
               onClick={() => toggleSubmenu("pages")}
@@ -112,13 +117,7 @@ export default function Navbar() {
               >
                 FAQ
               </Link>
-              <Link
-                href="/testimonials"
-                className="block px-4 py-2 hover:bg-gray-100"
-                onClick={closeAllMenus}
-              >
-                Testimonials
-              </Link>
+             
             </div>
           </li>
           <li>
