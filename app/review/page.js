@@ -77,7 +77,7 @@ export default function ReviewsPage() {
         />
         <div className="absolute inset-0 bg-black/50 flex items-center justify-center">
           <div className="text-center text-white px-4">
-            <h1 className="text-4xl md:text-6xl font-serif mb-4" style={{ fontFamily: 'Playfair Display' }}>
+            <h1 className="text-4xl md:text-6xl font-serif mb-4" >
               Cutomer Reviews
             </h1>
             <p className="text-xl md:text-2xl italic" style={{ fontFamily: 'Dancing Script' }}>
@@ -94,7 +94,7 @@ export default function ReviewsPage() {
       <section className="py-16 px-6 md:px-20 bg-[#0d2b24] text-white">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-3xl font-serif mb-4" style={{ fontFamily: 'Playfair Display' }}>
+            <h2 className="text-3xl font-serif mb-4" >
               Video Testimonials
             </h2>
             <div className="w-24 h-0.5 bg-[#0d2b24] mx-auto"></div>
@@ -121,7 +121,7 @@ export default function ReviewsPage() {
           <FaStar key={i} className="text-yellow-400 text-sm" />
         ))}
       </div>
-      <h3 className="text-white text-base font-serif">Ritika & Ankit's Wedding</h3>
+      <h3 className="text-white text-base font-serif">Ritika & Ankit&apos;s Wedding</h3>
       <p className="text-gray-200 text-sm">February 2024</p>
     </div>
   </div>
@@ -164,7 +164,7 @@ export default function ReviewsPage() {
       <section className="py-16 px-6 md:px-20 bg-[#10332a]">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-3xl font-serif mb-4" style={{ fontFamily: 'Playfair Display' }}>
+            <h2 className="text-3xl font-serif mb-4" >
               What Our Clients Say
             </h2>
             <div className="w-24 h-0.5 bg-[#0d2b24] mx-auto"></div>
@@ -207,11 +207,11 @@ export default function ReviewsPage() {
       {/* CTA Section */}
       <section className="py-20 px-6 md:px-20 bg-[#0d2b24] text-white text-center">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-serif mb-6" style={{ fontFamily: 'Playfair Display' }}>
+          <h2 className="text-3xl md:text-4xl font-serif mb-6" >
             Ready to Create Your Perfect Event?
           </h2>
           <p className="text-xl mb-8 max-w-2xl mx-auto">
-            Join hundreds of satisfied clients who've experienced the Banerjee Caterers difference.
+            Join hundreds of satisfied clients who&apos;ve experienced the Banerjee Caterers difference.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <a 

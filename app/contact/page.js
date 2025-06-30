@@ -83,7 +83,7 @@ export default function ContactPage() {
         />
         <div className="absolute inset-0 bg-black/50 flex items-center justify-center">
           <div className="text-center text-white px-4">
-            <h1 className="text-4xl md:text-6xl font-serif mb-4" style={{ fontFamily: 'Playfair Display' }}>
+            <h1 className="text-4xl md:text-6xl font-serif mb-4" >
               Contact Us
             </h1>
             <p className="text-xl md:text-2xl italic" style={{ fontFamily: 'Dancing Script' }}>
@@ -101,7 +101,7 @@ export default function ContactPage() {
         <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12">
           {/* Contact Information */}
           <div>
-            <h2 className="text-3xl font-serif mb-8 " style={{ fontFamily: 'Playfair Display' }}>
+            <h2 className="text-3xl font-serif mb-8 " >
               Get in Touch
             </h2>
             
@@ -234,7 +234,7 @@ export default function ContactPage() {
 
           {/* Book Now Form */}
           <div className="bg-gray-50 p-8 rounded-lg shadow-md">
-            <h2 className="text-3xl font-serif mb-6 text-gray-800" style={{ fontFamily: 'Playfair Display' }}>
+            <h2 className="text-3xl font-serif mb-6 text-gray-800" >
               Book Your Event
             </h2>
             <form onSubmit={handleSubmit}>
@@ -378,7 +378,7 @@ export default function ContactPage() {
       {/* Branches Section */}
       <section className="py-16 px-6 md:px-20 bg-[#11382f] text-white">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl font-serif mb-12 text-center " style={{ fontFamily: 'Playfair Display' }}>
+          <h2 className="text-3xl font-serif mb-12 text-center " >
             Our Branches
           </h2>
           <div className="grid md:grid-cols-3 gap-8">

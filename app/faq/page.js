@@ -14,7 +14,7 @@ export default function FAQPage() {
   const faqs = [
     {
       question: "How do I book Banerjee Caterers for my event?",
-      answer: "You can reach out through our Contact Form, call us directly, or send us a WhatsApp message. We'll discuss your event details, share menu options, and confirm availability."
+      answer: "You can reach out through our Contact Form, call us directly, or send us a WhatsApp message. We&apos;ll discuss your event details, share menu options, and confirm availability."
     },
     {
       question: "What types of events do you cater to?",
@@ -88,7 +88,7 @@ export default function FAQPage() {
       <div className="relative w-full h-[50vh] overflow-hidden">
         <div className="absolute inset-0 bg-[#0d2b24]/90 flex items-center justify-center">
           <div className="text-center text-white px-4">
-            <h1 className="text-4xl md:text-6xl font-serif mb-4" style={{ fontFamily: 'Playfair Display' }}>
+            <h1 className="text-4xl md:text-6xl font-serif mb-4" >
               FAQs
             </h1>
             <p className="text-xl md:text-2xl italic" style={{ fontFamily: 'Dancing Script' }}>
@@ -103,7 +103,7 @@ export default function FAQPage() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <p className="text-yellow-400 tracking-widest text-sm mb-3">✦ HAVE QUESTIONS? ✦</p>
-            <h2 className="text-4xl font-serif mb-4" style={{ fontFamily: 'Playfair Display' }}>
+            <h2 className="text-4xl font-serif mb-4" >
               Frequently Asked Questions
             </h2>
             <div className="w-24 h-0.5 bg-yellow-400 mx-auto"></div>
@@ -146,7 +146,7 @@ export default function FAQPage() {
           </div>
 
           <div className="text-center mt-16">
-            <p className="text-gray-300 mb-6 text-lg">Still have questions? We'd love to hear from you!</p>
+            <p className="text-gray-300 mb-6 text-lg">Still have questions? We&apos;d love to hear from you!</p>
             <Link 
               href="/contact" 
               className="inline-flex items-center border-2 border-yellow-400 text-yellow-400 px-8 py-3 text-lg font-medium hover:bg-yellow-400 hover:text-black transition rounded"
@@ -163,7 +163,7 @@ export default function FAQPage() {
       {/* CTA Section */}
       <section className="bg-[#10332a] text-white py-20 px-6 md:px-20 text-center">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-serif mb-6" style={{ fontFamily: 'Playfair Display' }}>
+          <h2 className="text-3xl md:text-4xl font-serif mb-6" >
             Ready to Plan Your Perfect Event?
           </h2>
           <p className="text-xl mb-8">

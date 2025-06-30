@@ -105,7 +105,7 @@ export default function GalleryPage() {
             <div className="max-w-7xl mx-auto">
               <div className="text-center mb-12">
                 <p className="text-yellow-400 tracking-widest text-sm mb-3">✦ EVENT SETUPS ✦</p>
-                <h2 className="text-3xl font-serif mb-4" style={{ fontFamily: 'Playfair Display' }}>
+                <h2 className="text-3xl font-serif mb-4" >
                   Elegant Event Presentations
                 </h2>
                 <div className="w-20 h-0.5 bg-yellow-400 mx-auto"></div>
@@ -147,7 +147,7 @@ export default function GalleryPage() {
             <div className="max-w-7xl mx-auto">
               <div className="text-center mb-12">
                 <p className="text-yellow-400 tracking-widest text-sm mb-3">✦ CULINARY DELIGHTS ✦</p>
-                <h2 className="text-3xl font-serif mb-4" style={{ fontFamily: 'Playfair Display' }}>
+                <h2 className="text-3xl font-serif mb-4" >
                   Our Signature Dishes
                 </h2>
                 <div className="w-20 h-0.5 bg-yellow-400 mx-auto"></div>

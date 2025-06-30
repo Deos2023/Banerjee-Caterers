@@ -58,7 +58,7 @@ export default function MenuPage() {
         />
         <div className="absolute inset-0 bg-black/50 flex items-center justify-center">
           <div className="text-center text-white px-4">
-            <h1 className="text-4xl md:text-6xl font-serif mb-4" style={{ fontFamily: 'Playfair Display' }}>
+            <h1 className="text-4xl md:text-6xl font-serif mb-4" >
               Our Menus
             </h1>
             <p className="text-xl md:text-2xl italic" style={{ fontFamily: 'Dancing Script' }}>

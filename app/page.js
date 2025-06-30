@@ -30,10 +30,10 @@ export default function Home() {
         <div className="absolute top-0 left-0 w-full h-full bg-black/50 z-10"></div>
         
         <div className="relative z-20 flex flex-col items-center justify-center h-full text-white text-center px-4">
-          <h1 className="text-4xl md:text-6xl font-serif" style={{ fontFamily: 'Playfair Display' }}>
+          <h1 className="text-4xl md:text-6xl font-serif" >
             BANERJEE
           </h1>
-          <h2 className="text-4xl md:text-6xl font-serif" style={{ fontFamily: 'Playfair Display' }}>
+          <h2 className="text-4xl md:text-6xl font-serif" >
             CATERERS
           </h2>
           <p
@@ -119,7 +119,7 @@ export default function Home() {
     </p>
     <h2
       className="text-4xl font-serif mb-16"
-      style={{ fontFamily: 'Playfair Display' }}
+      
     >
       Generations of Hospitality
     </h2>
@@ -186,7 +186,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <p className="text-yellow-400 tracking-widest text-sm mb-3">✦ CLIENT LOVE ✦</p>
-            <h2 className="text-4xl font-serif" style={{ fontFamily: 'Playfair Display' }}>What Our Clients Say</h2>
+            <h2 className="text-4xl font-serif" >What Our Clients Say</h2>
           </div>
           
           <div className="grid md:grid-cols-3 gap-8">
@@ -249,7 +249,7 @@ export default function Home() {
      <section className="bg-[#0d2b24] text-white py-20 px-6 md:px-20">
   <div className="max-w-7xl mx-auto text-center">
     <p className="text-yellow-400 tracking-widest text-sm mb-3">✦ OUR SERVICES ✦</p>
-    <h2 className="text-4xl font-serif mb-6" style={{ fontFamily: 'Playfair Display' }}>
+    <h2 className="text-4xl font-serif mb-6" >
       Customized Menus
     </h2>
 
