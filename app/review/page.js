@@ -34,7 +34,7 @@ export default function ReviewsPage() {
       id: 4,
       name: "Soumitra Das",
       rating: 5,
-      review: "Exceptional service for our daughter's rice ceremony. They accommodated all our traditional Bengali cuisine requirements perfectly. Will definitely book again!",
+      review: "Exceptional service for our daughters rice ceremony. They accommodated all our traditional Bengali cuisine requirements perfectly. Will definitely book again!",
       video: "/rev.mp4",
       date: "November 2023"
     },
@@ -80,7 +80,7 @@ export default function ReviewsPage() {
             <h1 className="text-4xl md:text-6xl font-serif mb-4" >
               Cutomer Reviews
             </h1>
-            <p className="text-xl md:text-2xl italic" style={{ fontFamily: 'Dancing Script' }}>
+            <p className="text-xl md:text-2xl italic">
               Hear what our clients say about their experiences
             </p>
           </div>

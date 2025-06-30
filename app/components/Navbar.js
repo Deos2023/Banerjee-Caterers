@@ -1,6 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -37,7 +38,14 @@ export default function Navbar() {
         {/* Logo */}
         <div className="flex items-center gap-2 z-60">
           <Link href="/" onClick={closeAllMenus}>
-            <img src="/logo.png" alt="Banerjee Caterers Logo" className="h-16 md:h-20" />
+            <Image
+  src="/logo.png"
+  alt="Banerjee Caterers Logo"
+  width={80}
+  height={80}
+  className="h-16 md:h-20 w-auto"
+/>
+
           </Link>
         </div>
 

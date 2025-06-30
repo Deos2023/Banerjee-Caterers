@@ -29,7 +29,7 @@ export default function AboutPage() {
   />
   <div className="absolute inset-0 bg-black/50 flex items-center justify-center">
     <div className="text-center text-white px-4">
-      <h1 className="text-4xl md:text-6xl font-serif mb-4" style={{ fontFamily: 'Playfair Display' }}>
+      <h1 className="text-4xl md:text-6xl font-serif mb-4" >
         Our Story
       </h1>
       <p className="text-xl md:text-2xl italic" style={{ fontFamily: 'Dancing Script' }}>
@@ -50,7 +50,7 @@ export default function AboutPage() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <p className="text-yellow-400 tracking-widest text-sm mb-3">✦ OUR JOURNEY ✦</p>
-            <h2 className="text-4xl font-serif mb-6" style={{ fontFamily: 'Playfair Display' }}>
+            <h2 className="text-4xl font-serif mb-6" >
               From Humble Beginnings to Kolkatas Premier Caterers
             </h2>
             <div className="w-24 h-0.5 bg-yellow-400 mx-auto"></div>
@@ -97,7 +97,7 @@ export default function AboutPage() {
         <div className="relative max-w-7xl mx-auto z-10">
           <div className="text-center mb-16">
             <p className="text-yellow-400 tracking-widest text-sm mb-3">✦ FAMILY LEGACY ✦</p>
-            <h2 className="text-4xl font-serif mb-6" style={{ fontFamily: 'Playfair Display' }}>
+            <h2 className="text-4xl font-serif mb-6" >
               Three Generations of Culinary Excellence
             </h2>
             <div className="w-24 h-0.5 bg-yellow-400 mx-auto"></div>
@@ -175,7 +175,7 @@ export default function AboutPage() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <p className="text-yellow-400 tracking-widest text-sm mb-3">✦ OUR SERVICES ✦</p>
-            <h2 className="text-4xl font-serif mb-6" style={{ fontFamily: 'Playfair Display' }}>
+            <h2 className="text-4xl font-serif mb-6" >
               Comprehensive Event Solutions
             </h2>
             <div className="w-24 h-0.5 bg-yellow-400 mx-auto"></div>
@@ -237,7 +237,7 @@ export default function AboutPage() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <p className="text-yellow-400 tracking-widest text-sm mb-3">✦ WHY CHOOSE US ✦</p>
-            <h2 className="text-4xl font-serif mb-6" style={{ fontFamily: 'Playfair Display' }}>
+            <h2 className="text-4xl font-serif mb-6" >
               The Banerjee Caterers Difference
             </h2>
             <div className="w-24 h-0.5 bg-yellow-400 mx-auto"></div>

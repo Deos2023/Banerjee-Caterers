@@ -61,7 +61,7 @@ export default function MenuPage() {
             <h1 className="text-4xl md:text-6xl font-serif mb-4" >
               Our Menus
             </h1>
-            <p className="text-xl md:text-2xl italic" style={{ fontFamily: 'Dancing Script' }}>
+            <p className="text-xl md:text-2xl italic" >
               Crafting Culinary Experiences
             </p>
           </div>
