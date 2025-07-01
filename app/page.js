@@ -26,7 +26,7 @@ export default function Home() {
           muted
           loop
           className="absolute top-0 left-0 w-full h-full object-cover"
-          src="/vid1.mp4"
+          src="/video4.mp4"
         />
         <div className="absolute top-0 left-0 w-full h-full bg-black/50 z-10"></div>
         
@@ -294,8 +294,8 @@ export default function Home() {
       <ContactSec />
       
       {/* Map Section */}
-      <section className="w-full h-[500px] bg-gray-200">
-        {/* <iframe
+      {/* <section className="w-full h-[500px] bg-gray-200">
+        <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3685.7717763250143!2d88.39450819999999!3d22.5127444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a0271e4a7d236f5%3A0x1d4a89f219d047f3!2sBanerjee%20Caterers%20and%20Event%20Management-Kasba%20Branch!5e0!3m2!1sen!2sin!4v1751272263287!5m2!1sen!2sin"
           width="100%"
           height="100%"
@@ -303,8 +303,8 @@ export default function Home() {
           allowFullScreen=""
           loading="lazy"
           title="Banerjee Caterers Location"
-        ></iframe> */}
-      </section>
+        ></iframe>
+      </section> */}
     </>
   );
 }

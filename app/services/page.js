@@ -105,7 +105,7 @@ export default function ServicesPage() {
 {/* Hero Section */}
 <div className="relative w-full h-[80vh] overflow-hidden">
   <Image
-    src="/img/setup/1 (10).jpeg"
+    src="/img/setup/1 (32).jpeg"
     alt="Banerjee Caterers Team"
     fill
     className="object-cover"
