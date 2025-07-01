@@ -152,6 +152,7 @@ export default function Navbar() {
       {mobileMenuOpen && (
         <div className="fixed inset-0 bg-black/50 z-40 md:hidden" onClick={closeAllMenus} />
       )}
+      
 
       {/* Mobile Sidebar */}
       <div
