@@ -183,7 +183,7 @@ export default function Navbar() {
                   <Link
                     href={item.href}
                     onClick={closeAllMenus}
-                    className={`block py-2 text-lg hover:text-yellow-400 ${
+                    className={`block py-2 text-lg text-white hover:text-yellow-400 ${
                       isActive(item.href) ? "text-yellow-400" : ""
                     }`}
                   >
@@ -196,7 +196,7 @@ export default function Navbar() {
               <li>
                 <button
                   onClick={() => toggleSubmenu("mobile-pages")}
-                  className={`flex items-center py-2 text-lg hover:text-yellow-400 w-full justify-between ${
+                  className={`flex items-center py-2 text-lg text-white hover:text-yellow-400 w-full justify-between ${
                     openSubmenu === "mobile-pages" ? "text-yellow-400" : ""
                   }`}
                 >
@@ -217,10 +217,10 @@ export default function Navbar() {
                     openSubmenu === "mobile-pages" ? "max-h-40 opacity-100" : "max-h-0 opacity-0"
                   }`}
                 >
-                  <Link href="/reviews" onClick={closeAllMenus} className="block py-2 hover:text-yellow-400">
+                  <Link href="/reviews" onClick={closeAllMenus} className="block py-2 text-white hover:text-yellow-400">
                     Reviews
                   </Link>
-                  <Link href="/faq" onClick={closeAllMenus} className="block py-2 hover:text-yellow-400">
+                  <Link href="/faq" onClick={closeAllMenus} className="block py-2 text-white hover:text-yellow-400">
                     FAQ
                   </Link>
                 </div>
