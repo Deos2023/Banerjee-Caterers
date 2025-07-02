@@ -6,36 +6,51 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 export default function MenuPage() {
-  const [activeTab, setActiveTab] = useState('social');
+  const [activeTab, setActiveTab] = useState('regular');
   const [activeSubTab, setActiveSubTab] = useState('budget');
+  const [viewingPdf, setViewingPdf] = useState(null);
 
-  // Sample menu data - replace with your actual menu items when available
-  const menuData = {
-    social: {
+  // PDF file paths
+  const pdfFiles = {
+    regular: {
       budget: [
-        { name: "Vegetable Pakora", price: "₹80" },
-        { name: "Chicken 65", price: "₹120" },
-        { name: "Paneer Tikka", price: "₹100" },
-        { name: "Veg Biryani", price: "₹90" },
-        { name: "Chicken Curry", price: "₹110" },
-        { name: "Gulab Jamun", price: "₹60" }
+        "/pdf/STANDARD 1 (3).pdf",
+        "/pdf/STANDARD 2 (1).pdf",
+        "/pdf/STANDARD 3 (1).pdf",
+        "/pdf/STANDARD 4 (1).pdf",
+        "/pdf/SUPERIOR 1 (1).pdf",
+        "/pdf/SUPERIOR 2 (1).pdf",
+        "/pdf/SUPERIOR 3 (1).pdf",
+        "/pdf/SUPERIOR 4 (1).pdf",
+        "/pdf/SUPREME 1 (1).pdf",
+        "/pdf/SUPREME 2 (1).pdf",
+        "/pdf/SUPREME 3 (1).pdf",
       ],
       premium: [
-        { name: "Tandoori Mushroom", price: "₹150" },
-        { name: "Mutton Galouti Kebab", price: "₹200" },
-        { name: "Prawn Malai Curry", price: "₹250" },
-        { name: "Hyderabadi Dum Biryani", price: "₹180" },
-        { name: "Butter Chicken", price: "₹160" },
-        { name: "Gajar Halwa", price: "₹100" }
+        "/pdf/SIGNATURE 1 (1).pdf",
+        "/pdf/SIGNATURE 2 (1).pdf",
+        "/pdf/SIGNATURE 3 (1).pdf",
+        "/pdf/REGEL 2 (1).pdf",
+        "/pdf/REGEL 3 (1).pdf",
+        "/pdf/REGEL 1 (1).pdf",
+        "/pdf/GRANDE 1 (1).pdf",
+        "/pdf/GRANDE 2 (1).pdf",
       ]
     },
-    corporate: {
-      standard: [
-        { name: "Corporate Lunch Box", price: "₹250" },
-        { name: "Conference Snack Pack", price: "₹180" },
-        { name: "Executive Buffet", price: "₹350" }
-      ]
-    }
+    corporate: [
+      "/pdf/CORPORATE BENGALI.pdf",
+      "/pdf/CORPORATE CHINESE.pdf",
+      "/pdf/CORPORATE CONTINENTAL.pdf",
+      "/pdf/CORPORATE INDIAN.pdf",
+    ]
+  };
+
+  const openPdfViewer = (pdfUrl) => {
+    setViewingPdf(pdfUrl);
+  };
+
+  const closePdfViewer = () => {
+    setViewingPdf(null);
   };
 
   return (
@@ -48,6 +63,27 @@ export default function MenuPage() {
         />
       </Head>
 
+      {/* PDF Viewer Modal */}
+      {viewingPdf && (
+        <div className="fixed inset-0 bg-black bg-opacity-90 z-50 flex items-center justify-center p-4">
+          <div className="relative w-full h-full max-w-6xl max-h-screen">
+            <button
+              onClick={closePdfViewer}
+              className="absolute top-4 right-4 bg-red-500 text-white rounded-full p-2 z-50 hover:bg-red-600 transition"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+            <iframe
+              src={`${viewingPdf}#view=fitH`}
+              className="w-full h-full border-none"
+              title="PDF Viewer"
+            />
+          </div>
+        </div>
+      )}
+
       <div className="relative w-full h-[80vh] overflow-hidden">
         <Image
           src="/img/dishes/1 (3).jpeg"
@@ -58,16 +94,15 @@ export default function MenuPage() {
         />
         <div className="absolute inset-0 bg-black/50 flex items-center justify-center">
           <div className="text-center text-white px-4">
-            <h1 className="text-4xl md:text-6xl font-serif mb-4" >
+            <h1 className="text-4xl md:text-6xl font-serif mb-4">
               Our Menus
             </h1>
-            <p className="text-xl md:text-2xl italic" >
+            <p className="text-xl md:text-2xl italic">
               Crafting Culinary Experiences
             </p>
           </div>
         </div>
       
-        {/* Gradient Fade to Our Journey Background */}
         <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-b from-transparent to-[#0d2b24]" />
       </div>
 
@@ -76,10 +111,13 @@ export default function MenuPage() {
           {/* Main Tabs */}
           <div className="flex justify-center border-b border-[#22483f] mb-12">
             <button
-              className={`px-6 py-3 font-medium ${activeTab === 'social' ? 'text-yellow-400 border-b-2 border-yellow-400' : 'text-gray-300 hover:text-white'}`}
-              onClick={() => setActiveTab('social')}
+              className={`px-6 py-3 font-medium ${activeTab === 'regular' ? 'text-yellow-400 border-b-2 border-yellow-400' : 'text-gray-300 hover:text-white'}`}
+              onClick={() => {
+                setActiveTab('regular');
+                setActiveSubTab('budget');
+              }}
             >
-              Social Gatherings
+              Regular Events
             </button>
             <button
               className={`px-6 py-3 font-medium ${activeTab === 'corporate' ? 'text-yellow-400 border-b-2 border-yellow-400' : 'text-gray-300 hover:text-white'}`}
@@ -89,8 +127,8 @@ export default function MenuPage() {
             </button>
           </div>
 
-          {/* Sub Tabs for Social */}
-          {activeTab === 'social' && (
+          {/* Sub Tabs for Regular */}
+          {activeTab === 'regular' && (
             <div className="flex justify-center mb-12">
               <button
                 className={`px-6 py-2 mx-2 rounded-full ${activeSubTab === 'budget' ? 'bg-yellow-400 text-black' : 'bg-[#10332a] text-white hover:bg-[#22483f]'}`}
@@ -108,32 +146,44 @@ export default function MenuPage() {
           )}
 
           {/* Menu Display */}
-          <div className="grid md:grid-cols-2 gap-12">
-            {activeTab === 'corporate' ? (
-              <div className="col-span-2 text-center">
-                <div className="bg-[#10332a] border border-[#22483f] p-8 rounded-lg">
-                  <h3 className="text-2xl font-serif mb-6 text-yellow-400">Corporate Menus Coming Soon</h3>
-                  <p className="text-gray-300 mb-6">
-                    Our specialized corporate menus will be available by June 30th. Please check back or contact us for details.
-                  </p>
-                  <Link 
-                    href="/contact" 
-                    className="inline-block border border-yellow-400 text-yellow-400 px-6 py-2 text-sm hover:bg-yellow-400 hover:text-black transition rounded"
-                  >
-                    INQUIRE NOW
-                  </Link>
-                </div>
-              </div>
-            ) : (
-              menuData.social[activeSubTab].map((item, index) => (
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {activeTab === 'regular' ? (
+              // Regular menu PDFs
+              pdfFiles.regular[activeSubTab].map((pdf, index) => (
                 <div key={index} className="bg-[#10332a] border border-[#22483f] p-6 rounded-lg hover:shadow-lg transition-shadow">
-                  <div className="flex justify-between items-center">
-                    <h3 className="text-lg font-medium">{item.name}</h3>
-                    <span className="text-yellow-400">{item.price}</span>
+                  <div className="flex flex-col items-center">
+                    <svg className="w-12 h-12 mb-4 text-yellow-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
+                    </svg>
+                    <h3 className="text-lg font-medium mb-2 text-center">
+                      {pdf.split('/').pop().replace('.pdf', '').replace(/_/g, ' ')}
+                    </h3>
+                    <button
+                      onClick={() => openPdfViewer(pdf)}
+                      className="inline-block border border-yellow-400 text-yellow-400 px-4 py-2 text-sm hover:bg-yellow-400 hover:text-black transition rounded"
+                    >
+                      View PDF
+                    </button>
                   </div>
-                  <div className="mt-4 flex justify-between text-sm text-gray-300">
-                    <span>Vegetarian</span>
-                    <span>Serves 1</span>
+                </div>
+              ))
+            ) : (
+              // Corporate menu PDFs
+              pdfFiles.corporate.map((pdf, index) => (
+                <div key={index} className="bg-[#10332a] border border-[#22483f] p-6 rounded-lg hover:shadow-lg transition-shadow">
+                  <div className="flex flex-col items-center">
+                    <svg className="w-12 h-12 mb-4 text-yellow-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
+                    </svg>
+                    <h3 className="text-lg font-medium mb-2 text-center">
+                      {pdf.split('/').pop().replace('.pdf', '').replace(/_/g, ' ')}
+                    </h3>
+                    <button
+                      onClick={() => openPdfViewer(pdf)}
+                      className="inline-block border border-yellow-400 text-yellow-400 px-4 py-2 text-sm hover:bg-yellow-400 hover:text-black transition rounded"
+                    >
+                      View PDF
+                    </button>
                   </div>
                 </div>
               ))
