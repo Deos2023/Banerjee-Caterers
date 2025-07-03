@@ -141,7 +141,7 @@ export default function ContactPage() {
                       +91 91431 72470
                     </a>
                     <a href="tel:+919874049030" className="block text-gray-300 hover:text-white transition">
-                      +91 98740 49030 (Emergency)
+                      +91 98740 49030 
                     </a>
                   </div>
                   <div className="mt-4">
@@ -167,8 +167,8 @@ export default function ContactPage() {
                 </div>
                 <div>
                   <h3 className="text-xl font-medium  mb-2">Email Us</h3>
-                  <a href="mailto:banerjeecaterers@gmail.com" className="text-gray-300 hover:text-white transition">
-                    banerjeecaterers@gmail.com
+                  <a href="mailto:banerjeecaterers05@gmail.com" className="text-gray-300 hover:text-white transition">
+                    banerjeecaterers05@gmail.com
                   </a>
                 </div>
               </div>

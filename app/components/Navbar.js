@@ -48,15 +48,17 @@ export default function Navbar() {
           scrolled ? "bg-[#0d2b24]/90 shadow-lg backdrop-blur-md" : "bg-transparent"
         } text-white`}
       >
-        {/* Logo */}
-        <div className="flex items-center gap-2 z-60">
+        {/* Logo with scaling on scroll */}
+        <div className="flex items-center gap-2 z-60 transition-all duration-300">
           <Link href="/" onClick={closeAllMenus}>
             <Image
               src="/logo.png"
               alt="Banerjee Caterers Logo"
-              width={80}
-              height={80}
-              className="h-16 md:h-20 w-auto"
+              width={90}
+              height={90}
+              className={`h-auto transition-all duration-300 ${
+                scrolled ? "w-20" : "w-32"
+              }`}
             />
           </Link>
         </div>

@@ -30,18 +30,18 @@ export default function Home() {
         />
         <div className="absolute top-0 left-0 w-full h-full bg-black/50 z-10"></div>
         
-        <div className="relative z-20 flex flex-col items-center justify-center h-full text-white text-center px-4">
-          <h1 className="text-4xl md:text-6xl font-serif" >
-            BANERJEE
+        <div className="relative z-20 flex flex-col items-center justify-center h-full text-white text-center px-4 t">
+          <h1 className="text-4xl md:text-6xl font-serif text-yellow-500" >
+            <span className="text-5xl md:text-8xl">B</span>ANERJEE
           </h1>
-          <h2 className="text-4xl md:text-6xl font-serif" >
-            CATERERS 
+          <h2 className="text-4xl md:text-6xl font-serif text-yellow-500" >
+            CATERER<span className="text-5xl md:text-7xl">S</span>
           </h2>
            <h2 className="text-xl md:text-3xl pt-4 font-serif" >
             & EVENT MANAGEMENT 
           </h2>
           <p
-            className="text-3xl md:text-5xl italic mt-2"
+            className="text-3xl md:text-5xl italic mt-10"
             
           >
             Crafting Experiences, Delivering Hospitality
@@ -144,7 +144,7 @@ export default function Home() {
                 />
               </div>
               <h3 className="text-xl font-serif mb-2">Gobinda Banerjee</h3>
-              <p className="text-yellow-400 text-sm mb-4">Founder & Master Chef</p>
+              <p className="text-yellow-400 text-sm mb-4">Founder & Owner</p>
               <p className="text-sm text-gray-300">
                 The culinary visionary behind our signature flavors, continues to
                 mentor our kitchen team with his decades of expertise in Bengali
@@ -166,8 +166,7 @@ export default function Home() {
               <h3 className="text-xl font-serif mb-2">Dinesh Banerjee</h3>
               <p className="text-yellow-400 text-sm mb-4">Operations Director</p>
               <p className="text-sm text-gray-300">
-                Brings operational excellence from his experience with Bijoli Grill
-                and Alibaba, ensuring seamless execution at every event.
+                Brings operational excellence from his experience in corporate catering agencies, ensuring seamless execution at every event.
               </p>
             </div>
 
@@ -185,7 +184,7 @@ export default function Home() {
               <h3 className="text-xl font-serif mb-2">Arghadip Banerjee</h3>
               <p className="text-yellow-400 text-sm mb-4">Creative Director</p>
               <p className="text-sm text-gray-300">
-                IHM Tarala and Taj Vivanta trained, infuses contemporary culinary
+                IHM Taratala and Taj Vivanta trained, infuses contemporary culinary
                 trends while preserving our traditional essence.
               </p>
             </div>

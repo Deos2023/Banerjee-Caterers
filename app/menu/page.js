@@ -30,9 +30,9 @@ export default function MenuPage() {
         "/pdf/SIGNATURE 1 (1).pdf",
         "/pdf/SIGNATURE 2 (1).pdf",
         "/pdf/SIGNATURE 3 (1).pdf",
-        "/pdf/REGEL 2 (1).pdf",
-        "/pdf/REGEL 3 (1).pdf",
-        "/pdf/REGEL 1 (1).pdf",
+        "/pdf/REGAL 2 (1).pdf",
+        "/pdf/REGAL 3 (1).pdf",
+        "/pdf/REGAL 1 (1).pdf",
         "/pdf/GRANDE 1 (1).pdf",
         "/pdf/GRANDE 2 (1).pdf",
       ]

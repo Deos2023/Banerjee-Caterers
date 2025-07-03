@@ -89,7 +89,7 @@ export default function ServicesPage() {
   const serviceStats = [
     { value: "35+", label: "Years Experience" },
     { value: "1000+", label: "Events Catered" },
-    { value: "50+", label: "Menu Varieties" },
+    { value: "150+", label: "Menu Varieties" },
     { value: "24/7", label: "Support" }
   ];
 
