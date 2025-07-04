@@ -172,8 +172,8 @@ export default function ReviewsPage() {
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {testimonials.map((testimonial) => (
-              <div key={testimonial.id} className="bg-gray-50 rounded-xl overflow-hidden shadow-md hover:shadow-lg transition">
-                <div className="relative h-48">
+              <div key={testimonial.id} className="bg-gray-300 rounded-xl overflow-hidden shadow-md hover:shadow-lg transition">
+                <div className="relative h-14">
                     {/* <video 
                       src={testimonial.video}
                       className="w-full h-full object-cover"
@@ -195,7 +195,7 @@ export default function ReviewsPage() {
                     ))}
                   </div>
                   <FaQuoteLeft className="text-[#0d2b24] text-2xl mb-4 opacity-20" />
-                  <p className="text-gray-600 mb-6 italic">{testimonial.review}</p>
+                  <p className="text-neutral-800 mb-6 italic">{testimonial.review}</p>
                   <p className="font-medium text-[#0d2b24]">{testimonial.name}</p>
                 </div>
               </div>

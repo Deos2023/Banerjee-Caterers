@@ -96,11 +96,11 @@ export default function Home() {
           <div className="relative">
             <div className="overflow-hidden rounded-b-full border-[1px] border-yellow-500">
               <Image
-                src="/mirror1.png"
+                src="/img/setup/1 (14).jpeg"
                 alt="Banerjee Family Legacy"
-                width={600}
-                height={800}
-                className="w-full h-auto object-cover rounded-b-full"
+                width={300}
+                height={50}
+                className="w-full h-1/3 object-cover rounded-b-full"
               />
             </div>
           </div>

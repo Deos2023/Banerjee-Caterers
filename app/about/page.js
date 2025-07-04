@@ -84,91 +84,89 @@ export default function AboutPage() {
       </section>
 
       {/* Family Legacy Section */}
-      <section className="bg-[#10332a] text-white py-20 px-6 md:px-20  bg-cover bg-center bg-no-repeat bg-fixed relative"
-      style={{
-    backgroundImage: "url('/img/setup/1 (14).jpeg')", // Path to your background image
-  }}
-      >
-        {/* Background Blur Layer (behind content) */}
-  <div className="absolute inset-0 z-0">
-    <div className="w-full h-full backdrop-blur-xs bg-black/60" />
-  </div>
-
-        <div className="relative max-w-7xl mx-auto z-10">
-          <div className="text-center mb-16">
-            <p className="text-yellow-400 tracking-widest text-sm mb-3">✦ FAMILY LEGACY ✦</p>
-            <h2 className="text-4xl font-serif mb-6" >
-              Three Generations of Culinary Excellence
-            </h2>
-            <div className="w-24 h-0.5 bg-yellow-400 mx-auto"></div>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-8">
-            {/* Founder */}
-            <div className="bg-[#0d2b24] p-8 rounded-lg border border-[#22483f] text-center">
-              <div className="w-40 h-40 mx-auto mb-6 rounded-full overflow-hidden border-2 border-yellow-400">
-                <Image
-                  src="/gobinda-banerjee.jpg" // Replace with founder's image
-                  alt="Gobinda Banerjee"
-                  width={160}
-                  height={160}
-                  className="object-cover w-full h-full"
-                />
+      {/* Leadership Section */}
+            <section
+              className="relative bg-[#10332a] text-white py-20 px-6 md:px-20 bg-cover bg-center bg-no-repeat bg-fixed"
+              style={{
+                backgroundImage: "url('/img/setup/1 (14).jpeg')",
+              }}
+            >
+              {/* Background Blur Layer (behind content) */}
+              <div className="absolute inset-0 z-0">
+                <div className="w-full h-full backdrop-blur-xs bg-black/60" />
               </div>
-              <h3 className="text-xl font-serif mb-2">Gobinda Banerjee</h3>
-              <p className="text-yellow-400 text-sm mb-4">Founder & Master Chef</p>
-              <p className="text-gray-300 text-sm">
-                The culinary visionary who started it all in 1987. A master of Bengali cuisine who continues to mentor our kitchen team with his decades of expertise.
-              </p>
-            </div>
-
-            {/* Second Generation */}
-            <div className="bg-[#0d2b24] p-8 rounded-lg border border-[#22483f] text-center">
-              <div className="w-40 h-40 mx-auto mb-6 rounded-full overflow-hidden border-2 border-yellow-400">
-                <Image
-                  src="/dinesh-banerjee.jpg" // Replace with image
-                  alt="Dinesh Banerjee"
-                  width={160}
-                  height={160}
-                  className="object-cover w-full h-full"
-                />
+      
+              {/* Actual Content (in front of blur) */}
+              <div className="relative z-10 max-w-7xl mx-auto text-center">
+                <p className="text-yellow-400 tracking-widest text-sm mb-3">
+                  ✦ MEET THE BANERJEES ✦
+                </p>
+                <h2
+                  className="text-4xl font-serif mb-16"
+                >
+                  Generations of Hospitality
+                </h2>
+      
+                <div className="grid md:grid-cols-3 gap-10">
+                  {/* Founder */}
+                  <div className="bg-[#0d2b24] p-8 rounded-lg border border-[#22483f]">
+                    <div className="w-32 h-32 mx-auto mb-6 overflow-hidden rounded-full border-2 border-yellow-400">
+                      <Image
+                        src="/gobinda-banerjee.jpg"
+                        alt="Gobinda Banerjee"
+                        width={128}
+                        height={128}
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                    <h3 className="text-xl font-serif mb-2">Gobinda Banerjee</h3>
+                    <p className="text-yellow-400 text-sm mb-4">Founder & Owner</p>
+                    <p className="text-sm text-gray-300">
+                      The culinary visionary behind our signature flavors, continues to
+                      mentor our kitchen team with his decades of expertise in Bengali
+                      cuisine.
+                    </p>
+                  </div>
+      
+                  {/* Second Generation */}
+                  <div className="bg-[#0d2b24] p-8 rounded-lg border border-[#22483f]">
+                    <div className="w-32 h-32 mx-auto mb-6 overflow-hidden rounded-full border-2 border-yellow-400">
+                      <Image
+                        src="/dinesh-banerjee.jpg"
+                        alt="Dinesh Banerjee"
+                        width={128}
+                        height={128}
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                    <h3 className="text-xl font-serif mb-2">Dinesh Banerjee</h3>
+                    <p className="text-yellow-400 text-sm mb-4">Operations Director</p>
+                    <p className="text-sm text-gray-300">
+                      Brings operational excellence from his experience in corporate catering agencies, ensuring seamless execution at every event.
+                    </p>
+                  </div>
+      
+                  {/* Third Generation */}
+                  <div className="bg-[#0d2b24] p-8 rounded-lg border border-[#22483f]">
+                    <div className="w-32 h-32 mx-auto mb-6 overflow-hidden rounded-full border-2 border-yellow-400">
+                      <Image
+                        src="/arghadip-banerjee.jpg"
+                        alt="Arghadip Banerjee"
+                        width={128}
+                        height={128}
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                    <h3 className="text-xl font-serif mb-2">Arghadip Banerjee</h3>
+                    <p className="text-yellow-400 text-sm mb-4">Creative Director</p>
+                    <p className="text-sm text-gray-300">
+                      IHM Taratala and Taj Vivanta trained, infuses contemporary culinary
+                      trends while preserving our traditional essence.
+                    </p>
+                  </div>
+                </div>
               </div>
-              <h3 className="text-xl font-serif mb-2">Dinesh Banerjee</h3>
-              <p className="text-yellow-400 text-sm mb-4">Operations Director</p>
-              <p className="text-gray-300 text-sm">
-                Brings operational excellence from his experience with Bijoli Grill and Alibaba, ensuring seamless execution at every event.
-              </p>
-            </div>
-
-            {/* Third Generation */}
-            <div className="bg-[#0d2b24] p-8 rounded-lg border border-[#22483f] text-center">
-              <div className="w-40 h-40 mx-auto mb-6 rounded-full overflow-hidden border-2 border-yellow-400">
-                <Image
-                  src="/arghadip-banerjee.jpg" // Replace with image
-                  alt="Arghadip Banerjee"
-                  width={160}
-                  height={160}
-                  className="object-cover w-full h-full"
-                />
-              </div>
-              <h3 className="text-xl font-serif mb-2">Arghadip Banerjee</h3>
-              <p className="text-yellow-400 text-sm mb-4">Creative Director</p>
-              <p className="text-gray-300 text-sm">
-                IHM Tarala and Taj Vivanta trained, infuses contemporary culinary trends while preserving our traditional essence.
-              </p>
-            </div>
-          </div>
-
-          <div className="mt-16 text-center max-w-4xl mx-auto">
-            <p className="text-gray-300 italic mb-6">
-              Together, three generations of the Banerjee family continue to uphold a promise — To craft every event with care. To deliver hospitality with heart. To make every guest feel truly celebrated.
-            </p>
-            <p className="text-yellow-400 text-xl font-serif">
-              Because at Banerjee Caterers, we don&apos;t just serve food. We craft experience. We deliver hospitality.
-            </p>
-          </div>
-        </div>
-      </section>
+            </section>
 
       {/* Our Services Section */}
       <section className="bg-[#0d2b24] text-white py-20 px-6 md:px-20">
@@ -309,14 +307,14 @@ export default function AboutPage() {
               </p>
             </div>
             <div className="bg-[#0d2b24] p-8 rounded-lg border border-[#22483f] text-center">
-              <div className="text-5xl font-serif text-yellow-400 mb-4">1000+</div>
+              <div className="text-5xl font-serif text-yellow-400 mb-4">2000+</div>
               <h3 className="text-xl font-serif mb-2">Events Catered</h3>
               <p className="text-gray-300 text-sm">
-                From intimate gatherings to grand weddings with 1000+ guests
+                From intimate gatherings to grand weddings with 2000+ guests
               </p>
             </div>
             <div className="bg-[#0d2b24] p-8 rounded-lg border border-[#22483f] text-center">
-              <div className="text-5xl font-serif text-yellow-400 mb-4">50+</div>
+              <div className="text-5xl font-serif text-yellow-400 mb-4">150+</div>
               <h3 className="text-xl font-serif mb-2">Dish Varieties</h3>
               <p className="text-gray-300 text-sm">
                 Traditional Bengali to Continental fusion in our repertoire

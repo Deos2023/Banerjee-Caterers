@@ -57,7 +57,7 @@ export default function Navbar() {
               width={120}
               height={120}
               className={`h-auto transition-all duration-300 ${
-                scrolled ? "w-32" : "w-48"
+                scrolled ? "w-28" : "w-48"
               }`}
             />
           </Link>
