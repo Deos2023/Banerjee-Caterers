@@ -41,8 +41,7 @@ export default function Home() {
             & EVENT MANAGEMENT 
           </h2>
           <p
-            className="text-3xl md:text-5xl italic mt-10"
-            
+            className="text-3xl md:text-5xl italic mt-10 font-bold text-[#e93434]" 
           >
             Crafting Experiences, Delivering Hospitality
           </p>
@@ -194,99 +193,50 @@ export default function Home() {
 
       <Testimonials/>
 
-      {/* Menu Card Section */}
-      <section className="bg-[#0d2b24] text-white py-20 px-6 md:px-20">
-        <div className="max-w-7xl mx-auto text-center">
-          <p className="text-yellow-400 tracking-widest text-sm mb-3">✦ OUR SERVICES ✦</p>
-          <h2 className="text-4xl font-serif mb-6" >
-            Customized Menus
-          </h2>
+      {/* Service Image Grid Section */}
+<section className="bg-[#0d2b24] text-white py-20 px-6 md:px-20">
+  <div className="max-w-7xl mx-auto text-center">
+    <p className="text-yellow-400 tracking-widest text-sm mb-3">✦ OUR SERVICES ✦</p>
+    <h2 className="text-4xl font-serif mb-12">
+      Customized Hospitality Solutions
+    </h2>
 
-          <div className="flex justify-center gap-4 mb-10 text-sm flex-wrap">
-            <span className="text-yellow-400 border-b border-yellow-400 pb-1">WEDDINGS</span>
-            <span className="text-white/60">CORPORATE EVENTS</span>
-            <span className="text-white/60">SOCIAL GATHERINGS</span>
-            <span className="text-white/60">RELIGIOUS FUNCTIONS</span>
-            <span className="text-white/60">CUSTOM EXPERIENCES</span>
-          </div>
+    {/* Icon Grid Blocks */}
+    <div className="grid md:grid-cols-4 sm:grid-cols-2 gap-8 mb-16">
+      <div className="bg-[#10332a] p-8 rounded-lg border border-[#22483f] text-center">
+        <Image src="/img/setup/1 (38).jpeg" width={56} height={56} className="w-14 h-14 mx-auto mb-4" alt="Wedding" />
+        <h3 className="text-lg font-serif mb-2">Wedding Catering</h3>
+        <p className="text-sm text-gray-300">Intimate ceremonies to grand receptions.</p>
+      </div>
+      <div className="bg-[#10332a] p-8 rounded-lg border border-[#22483f] text-center">
+        <Image src="/img/setup/1 (47).jpeg" width={56} height={56} className="w-14 h-14 mx-auto mb-4" alt="Corporate" />
+        <h3 className="text-lg font-serif mb-2">Corporate Events</h3>
+        <p className="text-sm text-gray-300">Seminars, training, conferences, and high-tea setups.</p>
+      </div>
+      <div className="bg-[#10332a] p-8 rounded-lg border border-[#22483f] text-center">
+        <Image src="/img/setup/1 (43).jpeg" width={56} height={56} className="w-14 h-14 mx-auto mb-4" alt="Social" />
+        <h3 className="text-lg font-serif mb-2">Social Gatherings</h3>
+        <p className="text-sm text-gray-300">Birthdays, anniversaries, and reunions.</p>
+      </div>
+      <div className="bg-[#10332a] p-8 rounded-lg border border-[#22483f] text-center">
+        <Image src="/img/setup/1 (39).jpeg" width={56} height={56} className="w-14 h-14 mx-auto mb-4" alt="Religious" />
+        <h3 className="text-lg font-serif mb-2">Religious Functions</h3>
+        <p className="text-sm text-gray-300">Annaprashan, pujas, havans with sattvik food options.</p>
+      </div>
+    </div>
 
-          {/* Feature Block with More Items */}
-          <div className="bg-[#10332a] border border-[#22483f] p-10 rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300 grid md:grid-cols-2 gap-12 items-center mb-16">
-            <div className="space-y-6 text-left max-h-[100vh] overflow-y-hidden pr-4">
-              {[
-                { title: "Premium Wedding Package", price: "₹1,500+", desc: "Gourmet selections with live counters, international cuisine, and premium desserts." },
-                { title: "Budget Wedding Package", price: "₹800+", badge: "POPULAR", desc: "Delicious traditional fare with all essential dishes for a complete meal." },
-                { title: "Reception Feast Menu", price: "₹1,200+", desc: "Elaborate spread suitable for reception celebrations with welcome drinks and desserts." },
-                { title: "Birthday Party Menu", price: "₹650+", desc: "Fun & flavorful menu loved by kids and adults alike." },
-                { title: "Rice Ceremony Menu", price: "₹600+", desc: "Traditional Annaprashan with pure Bengali flavors." },
-                { title: "Corporate Lunch", price: "₹500+", desc: "Efficient service with nutritious, delicious meals for business meetings and conferences." },
-                { title: "High-Tea / Seminar Menu", price: "₹300+", desc: "Includes snacks, tea/coffee, and light bites — perfect for short formal events." },
-                { title: "Religious Function Menu", price: "₹600+", desc: "Sattvik and vegetarian options for pujas, annaprashan and homa ceremonies." },
-                { title: "Live Counter Showcase", price: "₹1,200+", desc: "Pasta, Mongolian, Chaat, Dosa & more, live-prepared with flair." },
-                { title: "Continental Fusion Menu", price: "₹1,000+", desc: "Bengali classics with a modern global twist." },
-                { title: "Dessert-Only Package", price: "₹300+", desc: "Misti doi, rosogolla, brownies, soufflé & fusion sweets for dessert counters." },
-                { title: "Traditional Bengali Veg", price: "₹550+", desc: "Luchi, alur dom, khichuri, labra, chutney, payesh – sattvik pure veg." },
-                { title: "Traditional Bengali Non-Veg", price: "₹950+", desc: "Fish fry, kosha mangsho, pulao, chutney, and mishti." },
-                { title: "Custom Menus", price: "Contact Us", desc: "Tailored to your specific event requirements and culinary preferences." }
-              ].map((item, i) => (
-                <div key={i}>
-                  <h4 className="text-sm font-bold">
-                    {item.title}
-                    {item.badge && (
-                      <span className="ml-2 bg-yellow-400 text-black text-[10px] px-2 py-0.5 rounded">{item.badge}</span>
-                    )}
-                    <span className="float-right text-yellow-400">{item.price}</span>
-                  </h4>
-                  <p className="text-sm text-gray-300">{item.desc}</p>
-                </div>
-              ))}
-            </div>
+    {/* CTA Button */}
+    <div className="text-center">
+      <Link
+        href="/contact"
+        className="inline-block bg-yellow-400 text-black px-8 py-3 text-sm font-medium hover:bg-yellow-500 transition rounded"
+      >
+        GET A FREE QUOTE
+      </Link>
+    </div>
+  </div>
+</section>
 
-            <div className="overflow-hidden rounded-b-full border-[1px] border-yellow-500">
-              <Image
-                src="/food1.jpeg"
-                alt="Wedding Catering"
-                width={600}
-                height={800}
-                className="object-cover rounded-b-full"
-              />
-            </div>
-          </div>
-
-          {/* Icon Grid Blocks */}
-          <div className="grid md:grid-cols-4 sm:grid-cols-2 gap-8 mb-16">
-            <div className="bg-[#10332a] p-8 rounded-lg border border-[#22483f] text-center">
-              <Image src="/img/setup/1 (38).jpeg" width={56} height={56} className="w-14 h-14 mx-auto mb-4" alt="Wedding" />
-              <h3 className="text-lg font-serif mb-2">Wedding Catering</h3>
-              <p className="text-sm text-gray-300">Intimate ceremonies to grand receptions.</p>
-            </div>
-            <div className="bg-[#10332a] p-8 rounded-lg border border-[#22483f] text-center">
-              <Image src="/img/setup/1 (47).jpeg" width={56} height={56} className="w-14 h-14 mx-auto mb-4" alt="Corporate" />
-              <h3 className="text-lg font-serif mb-2">Corporate Events</h3>
-              <p className="text-sm text-gray-300">Seminars, training, conferences, and high-tea setups.</p>
-            </div>
-            <div className="bg-[#10332a] p-8 rounded-lg border border-[#22483f] text-center">
-              <Image src="/img/setup/1 (43).jpeg" width={56} height={56} className="w-14 h-14 mx-auto mb-4" alt="Social" />
-              <h3 className="text-lg font-serif mb-2">Social Gatherings</h3>
-              <p className="text-sm text-gray-300">Birthdays, anniversaries, and reunions.</p>
-            </div>
-            <div className="bg-[#10332a] p-8 rounded-lg border border-[#22483f] text-center">
-              <Image src="/img/setup/1 (39).jpeg" width={56} height={56} className="w-14 h-14 mx-auto mb-4" alt="Religious" />
-              <h3 className="text-lg font-serif mb-2">Religious Functions</h3>
-              <p className="text-sm text-gray-300">Annaprashan, pujas, havans with sattvik food options.</p>
-            </div>
-          </div>
-
-          <div className="text-center">
-            <Link
-              href="/contact"
-              className="inline-block bg-yellow-400 text-black px-8 py-3 text-sm font-medium hover:bg-yellow-500 transition rounded"
-            >
-              GET A FREE QUOTE
-            </Link>
-          </div>
-        </div>
-      </section>
 
       <GallerySlider />
       <FAQSection />

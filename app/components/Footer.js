@@ -79,7 +79,7 @@ export default function Footer() {
                 <div>
                   <p className="text-gray-300">+91 98756 18558</p>
                   <p className="text-gray-300">+91 91431 72470</p>
-                  <p className="text-gray-300">+91 98740 49030 (Emergency)</p>
+                  <p className="text-gray-300">+91 98740 49030 </p>
                 </div>
               </li>
               <li className="flex items-start">

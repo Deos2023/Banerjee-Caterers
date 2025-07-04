@@ -73,7 +73,7 @@ export default function AboutPage() {
             </div>
             <div className="relative h-96 rounded-lg overflow-hidden border-2 border-yellow-400/50">
               <Image
-                src="/img/setup/1 (26).jpeg" // Replace with your journey image
+                src="/img/setup/1 (41).jpeg" // Replace with your journey image
                 alt="Our Journey"
                 fill
                 className="object-cover"

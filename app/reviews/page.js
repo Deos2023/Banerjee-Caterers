@@ -174,13 +174,13 @@ export default function ReviewsPage() {
             {testimonials.map((testimonial) => (
               <div key={testimonial.id} className="bg-gray-50 rounded-xl overflow-hidden shadow-md hover:shadow-lg transition">
                 <div className="relative h-48">
-                  <video 
-                    src={testimonial.video}
-                    className="w-full h-full object-cover"
-                    muted
-                    loop
-                    autoPlay
-                  />
+                    {/* <video 
+                      src={testimonial.video}
+                      className="w-full h-full object-cover"
+                      muted
+                      loop
+                      autoPlay
+                    /> */}
                   <div className="absolute top-4 left-4 bg-[#0d2b24] text-white px-3 py-1 rounded-full text-sm">
                     {testimonial.date}
                   </div>

@@ -54,10 +54,10 @@ export default function Navbar() {
             <Image
               src="/logo.png"
               alt="Banerjee Caterers Logo"
-              width={90}
-              height={90}
+              width={120}
+              height={120}
               className={`h-auto transition-all duration-300 ${
-                scrolled ? "w-20" : "w-32"
+                scrolled ? "w-32" : "w-48"
               }`}
             />
           </Link>
