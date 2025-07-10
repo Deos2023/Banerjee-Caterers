@@ -135,7 +135,7 @@ export default function Home() {
             <div className="bg-[#0d2b24] p-8 rounded-lg border border-[#22483f]">
               <div className="w-32 h-32 mx-auto mb-6 overflow-hidden rounded-full border-2 border-yellow-400">
                 <Image
-                  src="/gobinda-banerjee.jpg"
+                  src="/gobindo.jpeg"
                   alt="Gobinda Banerjee"
                   width={128}
                   height={128}
@@ -155,7 +155,7 @@ export default function Home() {
             <div className="bg-[#0d2b24] p-8 rounded-lg border border-[#22483f]">
               <div className="w-32 h-32 mx-auto mb-6 overflow-hidden rounded-full border-2 border-yellow-400">
                 <Image
-                  src="/dinesh-banerjee.jpg"
+                  src="/dinesh.jpeg"
                   alt="Dinesh Banerjee"
                   width={128}
                   height={128}
@@ -173,7 +173,7 @@ export default function Home() {
             <div className="bg-[#0d2b24] p-8 rounded-lg border border-[#22483f]">
               <div className="w-32 h-32 mx-auto mb-6 overflow-hidden rounded-full border-2 border-yellow-400">
                 <Image
-                  src="/arghadip-banerjee.jpg"
+                  src="/arghadip.jpeg"
                   alt="Arghadip Banerjee"
                   width={128}
                   height={128}

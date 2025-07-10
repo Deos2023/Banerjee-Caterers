@@ -112,7 +112,7 @@ export default function AboutPage() {
                   <div className="bg-[#0d2b24] p-8 rounded-lg border border-[#22483f]">
                     <div className="w-32 h-32 mx-auto mb-6 overflow-hidden rounded-full border-2 border-yellow-400">
                       <Image
-                        src="/gobinda-banerjee.jpg"
+                        src="/gobindo.jpeg"
                         alt="Gobinda Banerjee"
                         width={128}
                         height={128}
@@ -132,7 +132,7 @@ export default function AboutPage() {
                   <div className="bg-[#0d2b24] p-8 rounded-lg border border-[#22483f]">
                     <div className="w-32 h-32 mx-auto mb-6 overflow-hidden rounded-full border-2 border-yellow-400">
                       <Image
-                        src="/dinesh-banerjee.jpg"
+                        src="/dinesh.jpeg"
                         alt="Dinesh Banerjee"
                         width={128}
                         height={128}
@@ -150,7 +150,7 @@ export default function AboutPage() {
                   <div className="bg-[#0d2b24] p-8 rounded-lg border border-[#22483f]">
                     <div className="w-32 h-32 mx-auto mb-6 overflow-hidden rounded-full border-2 border-yellow-400">
                       <Image
-                        src="/arghadip-banerjee.jpg"
+                        src="/arghadip.jpeg"
                         alt="Arghadip Banerjee"
                         width={128}
                         height={128}
@@ -168,6 +168,60 @@ export default function AboutPage() {
               </div>
             </section>
 
+
+{/* Mission & Vision Section */}
+      <section className="py-20 px-6 md:px-20 bg-[#10332a] text-white">
+        <div className="max-w-7xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-16">
+            {/* Mission */}
+            <div className="bg-[#0d2b24] p-10 rounded-lg border border-[#22483f] relative overflow-hidden">
+              <div className="absolute top-0 left-0 w-full h-1 bg-yellow-400"></div>
+              <div className="relative z-10">
+                <div className="flex items-center mb-6">
+                  <div className="bg-yellow-400/10 p-3 rounded-full mr-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-yellow-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                    </svg>
+                  </div>
+                  <h2 className="text-3xl font-serif">Mission</h2>
+                </div>
+                <blockquote className="text-lg italic text-gray-300 border-l-4 border-yellow-400 pl-6 py-2">
+                  "To craft unforgettable culinary experiences by delivering authentic, high-quality, and personalized catering services, rooted in tradition, innovation, and heartfelt hospitality."
+                </blockquote>
+                <div className="mt-6">
+                  <p className="text-gray-300">
+                    Our mission drives every dish we prepare and every event we cater. We commit to preserving Bengali culinary heritage while innovating to meet modern tastes and expectations.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Vision */}
+            <div className="bg-[#0d2b24] p-10 rounded-lg border border-[#22483f] relative overflow-hidden">
+              <div className="absolute top-0 left-0 w-full h-1 bg-yellow-400"></div>
+              <div className="relative z-10">
+                <div className="flex items-center mb-6">
+                  <div className="bg-yellow-400/10 p-3 rounded-full mr-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-yellow-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                    </svg>
+                  </div>
+                  <h2 className="text-3xl font-serif">Vision</h2>
+                </div>
+                <blockquote className="text-lg italic text-gray-300 border-l-4 border-yellow-400 pl-6 py-2">
+                  "To be the most trusted and celebrated catering brand in India, known for redefining hospitality through excellence in service, commitment to quality, and a passion for bringing people together over food."
+                </blockquote>
+                <div className="mt-6">
+                  <p className="text-gray-300">
+                    We envision a future where Banerjee Caterers becomes synonymous with exceptional catering experiences across India, setting new standards in culinary excellence and event hospitality.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       {/* Our Services Section */}
       <section className="bg-[#0d2b24] text-white py-20 px-6 md:px-20">
         <div className="max-w-7xl mx-auto">
